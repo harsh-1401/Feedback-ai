@@ -81,7 +81,7 @@ export default function Home() {
     try {
       const formData = new FormData();
       formData.append('file', file);
-      const res = await fetch('http://localhost:5000/api/analyze-call', {
+      const res = await fetch('https://feedback-ai-backend-zhkk.onrender.com', {
         method: 'POST',
         body: formData,
       });
